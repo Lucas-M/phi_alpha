@@ -12,25 +12,26 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-echo "Connected successfully " . $database . "<br><br>";
+echo "Connected successfully " . $database . "<br>";
 
 
 // mysql_select_db("fruits") or die("<p>Error selecting the database " . mysql_error() . "</p>");
 
 // echo "<p>Connect to MySQL, using database fruits.</p>";
 // $sql = "DELETE from citrus WHERE name = 'Lime'";
-$sql = "SELECT * from citrus";
+$sql = "SHOW TABLES;";
 $result = $conn->query($sql);
+
+echo "<ul>";
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. " - Name: " . $row["name"]. " - Color: " . $row["color"]. "<br>";
+        echo "<li>Table: " . $row["Tables_in_fruits"] . "</li>";
     }
-} else {
-    echo "0 results";
-}
+} 
 
+echo "</ul>";
 
 $conn->close();
 ?>

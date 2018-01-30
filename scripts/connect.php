@@ -21,4 +21,4 @@ $conn->close();
 ?>
 <br>
 <br>
-<a href='../connect.html'><input type='button' value = 'Back to Main'></input></a>
+<a href='../home.html'><input type='button' value = 'Back to Home'></input></a>

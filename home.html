@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Connection Test</title>
+    <meta charset="UTF-8"> 
+  </head>
+  <body>
+    <div id="header">
+      <h1>PHP & MySQL: </h1></div>
+      
+    <div id="content">
+      <h1>DB Test operations</h1>
+    	<form action="scripts/connect.php" method="POST">
+    	  <fieldset class="center">
+          <input type="submit" value="Test Connection"/>
+    	  </fieldset>
+    	</form>
+
+      <form action="scripts/show_limes.php" method="POST">
+        <fieldset class="center">
+          <input type="submit" value="Show Citrus"/>
+        </fieldset>
+      </form>
+
+      <form action="scripts/create_lime.php" method="POST">
+        <fieldset class="center">
+          <input type="submit" value="Create a lime"/>
+        </fieldset>
+      </form>
+
+      <form action="scripts/update_lime.php" method="POST">
+        <fieldset class="center">
+          <input type="submit" value="Update a lime"/>
+        </fieldset>
+      </form>
+
+      <form action="scripts/delete.php" method="POST">
+        <fieldset class="center">
+          <input type="submit" value="Delete the limes"/>
+        </fieldset>
+      </form>
+      
+      <form action="scripts/show_tables.php" method="POST">
+        <fieldset class="center">
+          <input type="submit" value="Show the tables"/>
+        </fieldset>
+      </form>
+
+    </div>
+
+    <div>
+      <p>List of things to do:</p>  
+      <ol>
+        <li>Complete crud operations hard codes</li>
+        <li>DONE :: Create record</li>
+        <li>DONE :: Update record</li>
+        <li>DONE :: Delete record</li>
+      </ol> 
+      <ol>
+        <li>Complete crud operations dynamic codes</li>
+        <li>Create record</li>
+        <li>Update record</li>
+        <li>Delete record</li>
+      </ol> 
+
+      <p>Get the show tables working...it gets results, but doesn't display them.</p>
+
+    </div>
+
+  </body>
+</html>
