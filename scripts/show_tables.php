@@ -1,12 +1,14 @@
 <?php
 
-$servername = "localhost";
-$username = "luke";
-$password = "mLilmk2p";
-$database = 'fruits';
+// $servername = "localhost";
+// $username = "luke";
+// $password = "mLilmk2p";
+// $database = 'fruits';
+
+require '../config/app_config.php';
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $database);
+$conn = new mysqli(DATABASE_HOST, DATABASE_USERNAME, DATABASE_PASSWORD, DATABASE_NAME);
 
 // Check connection
 if ($conn->connect_error) {

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Connection Test</title>
+    <meta charset="UTF-8"> 
+  </head>
+  <body>
+    <div id="header">
+      <h1>Query Executor</h1></div>
+      
+    <div id="content">
+      <h2>Enter query below</h2>
+      <a href='../home.html'><input type='button' value = 'Back to Home'></input></a>
+      <br>
+      <br>
+      
+      <form action="scripts/run_query.php" method="POST">
+        <fieldset>
+          <textarea id="query_text" name="query" cols="65" rows="8"></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+          <input type="submit" value="Run Query" />
+          <input type="reset" value="Clear and Restart" />
+        </fieldset>
+      </form>
+
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
